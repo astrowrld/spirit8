@@ -232,7 +232,8 @@ body {
   .headerbanner__button {
     position: absolute;
     bottom: 5%;
-    left: 49%;
+    left: 50%;
+    margin-left: -27.5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
