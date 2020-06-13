@@ -6,6 +6,29 @@ $(document).ready(function () {
      dots:true,
      adeptiveHeight:true,
      variableWidth: false,
+     responsive:[
+      {
+        breakpoint:736,
+        settings:{
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+    },
+    {
+      breakpoint:380,
+      settings:{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adeptiveHeight: false,
+        variableWidth: true,
+        centerMode: true,
+ 
+      }
+  }
+    
+  
+  ]
+     
      
    });
 
