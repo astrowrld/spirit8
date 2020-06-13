@@ -80,7 +80,7 @@ body {
       overflow: hidden; } }
 
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0px 10px; }
   @media (max-width: 1200px) {
@@ -305,10 +305,6 @@ body {
   padding: 100px 0px; }
   @media (max-width: 992px) {
     .about__row {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
       padding: 30px 0px; } }
 
 .about__image {
@@ -361,6 +357,8 @@ body {
 
 .about__list {
   margin-bottom: 0px; }
+  .about__list :last-child {
+    margin-bottom: 0px; }
 
 .about__item {
   margin-bottom: 20px;
@@ -390,6 +388,11 @@ body {
   font-weight: 100; }
   .title__text span {
     font-weight: 700; }
+  @media (max-width: 767px) {
+    .title__text {
+      margin-top: 30px;
+      font-size: 34px;
+      text-align: center; } }
 
 .title__lines {
   display: -webkit-box;
@@ -421,6 +424,10 @@ body {
   font-size: 16px;
   color: #6c6c6c;
   font-style: italic; }
+  @media (max-width: 380px) {
+    .title__subtext {
+      font-size: 14px;
+      line-height: 22px; } }
 
 .title-light__text {
   color: #000000; }
@@ -436,6 +443,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 767px) {
+    .slider__row {
+      padding: 50px 0px 30px 0px; } }
   .slider__row .slick-list {
     overflow: hidden; }
   .slider__row .slick-track {
@@ -453,9 +463,15 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 767px) {
+      .slider__row .slick-dots {
+        margin-top: 45px; } }
   .slider__row .slick-dots li {
     list-style: none;
     margin: 0px 13px; }
+    @media (max-width: 380px) {
+      .slider__row .slick-dots li {
+        margin: 0px 8px; } }
   .slider__row .slick-dots li.slick-active button {
     background-color: #fcac45; }
   .slider__row .slick-dots li button {
@@ -476,6 +492,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   max-width: 285px; }
+  @media (max-width: 380px) {
+    .slider__item {
+      min-width: 310px;
+      overflow: hidden; } }
 
 .slider__image img {
   width: 130px;
@@ -578,12 +598,21 @@ body {
 
 .work__row {
   margin: 100px 0; }
+  @media (max-width: 767px) {
+    .work__row {
+      margin: 30px 0; } }
 
 .work__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 16px; }
+  @media (max-width: 480px) {
+    .work__items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .work__items :last-child {
     margin-right: 0px; }
   .work__items h4 {
@@ -594,10 +623,18 @@ body {
     color: #222222;
     text-transform: uppercase;
     font-size: 18px; }
+    @media (max-width: 480px) {
+      .work__items h4 {
+        text-align: center; } }
   .work__items :focus {
     color: #292929; }
   .work__items :hover {
     color: #292929; }
+
+.work__bodyitems {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center; }
 
 .work__item {
   margin-left: 20px;
@@ -613,16 +650,32 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -15px; }
+  @media (max-width: 767px) {
+    .work__body {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .work__block {
   padding: 0px 15px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 25%;
-  flex: 0 1 25%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
   margin-top: 30px;
-  width: 262px;
-  height: 237px;
+  max-width: 300px;
+  max-height: 300px;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .work__block {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%; } }
+  @media (max-width: 380px) {
+    .work__block {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      margin-top: 15px; } }
 
 .work__image {
   width: 100%; }
@@ -641,6 +694,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media (max-width: 767px) {
+      .testimonials__row {
+        padding: 50px 0px 30px 0px; } }
     .testimonials__row .slick-list {
       overflow: hidden; }
     .testimonials__row .slick-track {
@@ -658,9 +714,15 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      @media (max-width: 767px) {
+        .testimonials__row .slick-dots {
+          margin-top: 30px; } }
     .testimonials__row .slick-dots li {
       list-style: none;
       margin: 0px 13px; }
+      @media (max-width: 767px) {
+        .testimonials__row .slick-dots li {
+          margin: 0px 8px; } }
     .testimonials__row .slick-dots li.slick-active button {
       background-color: #fcac45; }
     .testimonials__row .slick-dots li button {
@@ -694,6 +756,9 @@ body {
 .contact__container {
   max-width: 750px;
   margin: 0px auto 100px auto; }
+  @media (max-width: 767px) {
+    .contact__container {
+      margin: 0px auto 30px auto; } }
 
 .contact__row {
   display: -webkit-box;
@@ -704,6 +769,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 767px) {
+    .contact__row {
+      margin: 30px  0px 30px 0px; } }
 
 .contact__name {
   width: 50%;
@@ -776,6 +844,15 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 767px) {
+      .footer__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
   .footer__text {
     color: #b2b2b2;
     text-transform: uppercase;
@@ -786,6 +863,9 @@ body {
     display: flex; }
     .footer__social :last-child {
       margin-right: 0px; }
+    @media (max-width: 767px) {
+      .footer__social {
+        margin-top: 10px; } }
   .footer li {
     margin-right: 15px; }
     .footer li a :hover {

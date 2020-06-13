@@ -30,7 +30,7 @@ body {
 
 //Стилизация главного контейнера
 .container {
-	max-width: 1140px;
+	max-width: 1160px;
 	margin: 0 auto;
 	padding: 0px 10px;
 	@media (max-width:1200px){
@@ -261,13 +261,13 @@ body {
 		display: flex;
 		padding: 100px 0px;
 		@media (max-width:992px){
-			flex-direction: column;
 			padding: 30px 0px;
 		 }
 	}
 
 	&__image {
 		flex: 1 1 50%;
+		
 		@media (max-width:767px){
 			display: none;
 		 }
@@ -317,6 +317,9 @@ body {
 
 	&__list {
 		margin-bottom: 0px;
+		:last-child {
+			margin-bottom: 0px;
+		}
 	}
 
 	&__item {
@@ -355,6 +358,11 @@ body {
 		span {
 			font-weight: 700;
 		}
+		@media (max-width:767px){
+			margin-top: 30px;
+			font-size: 34px;
+			text-align: center;
+		 }
 	}
 
 	&__lines {
@@ -381,6 +389,10 @@ body {
 		font-size: 16px;
 		color: #6c6c6c;
 		font-style: italic;
+		@media (max-width:380px){
+			font-size: 14px;
+			line-height: 22px;
+		 }
 	}
 }
 
@@ -405,6 +417,10 @@ body {
 		 padding: 100px 0px 100px 0px;
 		 justify-content: center;
 		 align-items: center;
+		 @media (max-width:767px){
+			padding: 50px 0px 30px 0px;
+		 }
+
 
 		.slick-list {
 			overflow: hidden;
@@ -412,6 +428,7 @@ body {
 		}
 		.slick-track{
 			display: flex;
+			
 		}
 
 		.slick-dots{
@@ -419,11 +436,18 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			@media (max-width:767px){
+				margin-top: 45px;
+			 }
+
 
 		}
 		.slick-dots li{
 			list-style: none;
 			margin: 0px 13px;
+			@media (max-width:380px){
+				margin: 0px 8px;
+			 }
 
 		}
 
@@ -446,6 +470,11 @@ body {
 		flex-direction: column;
 		align-items: center;
 		max-width: 285px;
+		@media (max-width:380px){
+			min-width: 310px;
+			overflow: hidden;
+		 }
+		
 	}
 
 	&__image {
@@ -563,13 +592,17 @@ body {
 
 	&__row {
 		margin: 100px 0;
+		@media (max-width:767px){
+			margin: 30px 0;
+		}
 	}
 
 	&__items {
 		display: flex;
 		font-size: 16px;
-		
-		
+		@media (max-width:480px){
+			flex-direction: column;
+		}
 		
 		:last-child {
 			margin-right: 0px;
@@ -580,6 +613,11 @@ body {
 			color: #222222;
 			text-transform: uppercase;
 			font-size: 18px;
+			@media (max-width:480px){
+				text-align: center;
+				
+			}
+				
 		}
 		:focus {
 			color: #292929;
@@ -587,15 +625,20 @@ body {
 		:hover {
 			color: #292929;
 		}
+	}
 
+	&__bodyitems {
+		display: inline-block;
+		margin-top: 10px;
+		text-align: center;
 	}
 
 	&__item {
 		margin-left: 20px;
 		color: #b5b5b5;
-		transition: 0.2s;
+		transition: 0.2s;	
 		
-		
+
 	}
 
 
@@ -603,16 +646,27 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -15px;
-
+		
+		@media (max-width:767px){
+			justify-content: center;
+		}
+		
 		}
 
 	&__block {
 		padding: 0px 15px;
-		flex: 0 1 25%;
+		flex: 1 1 25%;
 		margin-top: 30px;
-		width: 262px;
-		height: 237px;
+		max-width: 300px;
+		max-height: 300px;
 		overflow: hidden;
+		@media (max-width:767px){
+			flex: 1 1 50%;
+		}
+		@media (max-width:380px){
+			flex: 1 1 100%;
+			margin-top: 15px;
+		}
 		}
 		
 
@@ -638,6 +692,12 @@ body {
 		display: flex;
 		padding: 100px 0px 100px 0px;
 		flex-direction: column;
+      @media (max-width:767px){
+			padding: 50px 0px 30px 0px;
+		 }
+
+
+
 		.slick-list {
 			overflow: hidden;
 
@@ -651,11 +711,17 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			@media (max-width:767px){
+				margin-top: 30px;
+			 }
 
 		}
 		.slick-dots li{
 			list-style: none;
 			margin: 0px 13px;
+			@media (max-width:767px){
+				margin: 0px 8px;
+			 }
 
 		}
 
@@ -699,6 +765,9 @@ body {
 	&__container {
 		max-width: 750px;
 		margin: 0px auto 100px auto;
+		@media (max-width:767px){
+			margin: 0px auto 30px auto;
+		 }
 	}
 
 	&__row {
@@ -706,6 +775,9 @@ body {
 		width: 100%;
 		margin: 100px  0px 30px 0px;
 		justify-content: space-between;
+		@media (max-width:767px){
+			margin: 30px  0px 30px 0px;
+		 }
 		
 	}
 
@@ -789,6 +861,11 @@ body {
 		height: 90px;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width:767px){
+			flex-direction: column;
+			justify-content: center;
+			
+		 }
 	}
 
 	&__text {
@@ -806,6 +883,10 @@ body {
 		:last-child {
 			margin-right: 0px;
 		}
+		@media (max-width:767px){
+			margin-top: 10px;
+			
+		 }
 	}
 		li {
 			margin-right: 15px;
