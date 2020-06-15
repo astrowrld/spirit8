@@ -30,6 +30,7 @@ body {
 
 //Стилизация главного контейнера
 .container {
+	overflow: hidden;
 	max-width: 1160px;
 	margin: 0 auto;
 	padding: 0px 10px;
@@ -56,7 +57,7 @@ body {
 	
 	&__row {
 		display: flex;
-		padding: 15px 0;
+		padding: 15px 0px 15px 0px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -79,18 +80,21 @@ body {
 			width: 100%;
 			height: 100%;
 			background-color: #222222;
+			opacity: 0.9;
 			z-index: 10;
-			padding: 100px 10px 20px 10px;
+			padding: 80px 20px 0px 20px;
 			transition: all 0.3s ease 0s;
 		}
 		&.active{
 			top: 0;
+			height: auto;
 		 }
 	}
 
 	&__burger {
 		display: none;
 		@media (max-width:767px){
+			
 			display: block;
 			position: relative;
 			width: 30px;
@@ -205,7 +209,6 @@ body {
 //Стилизация меню в шапке
 .menu-header {
 	
-
 	&__list {
 		display: flex;
 		:last-child {
@@ -238,7 +241,7 @@ body {
 			
 		 }
 		 @media (max-width:767px){
-			margin-bottom: 26px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -249,6 +252,9 @@ body {
 		color: white;
 		text-transform: uppercase;
 		position: relative;
+		@media (max-width:767px){
+			font-size: 18px;
+		}
 		
 	}
 }
@@ -764,6 +770,7 @@ body {
 
 	&__container {
 		max-width: 750px;
+		padding: 0px 10px;
 		margin: 0px auto 100px auto;
 		@media (max-width:767px){
 			margin: 0px auto 30px auto;
@@ -872,20 +879,27 @@ body {
 		color: #b2b2b2;
 		text-transform: uppercase;
 		font-size: 12px;
+		@media (max-width:767px){
+			margin-top: 10px;
+			order: 2;	
+			 }
 
 	}
 
 	&__right {
+		display: flex;
+		
 	}
 
 	&__social {
 		display: flex;
+		order: 2;
 		:last-child {
 			margin-right: 0px;
 		}
 		@media (max-width:767px){
-			margin-top: 10px;
 			
+			order: 1;
 		 }
 	}
 		li {
